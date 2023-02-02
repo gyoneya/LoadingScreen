@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading {
+  max-width: 50%;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.loading_author {
+  font-size: 0.9rem;
+  display: block;
+  color: rgb(163, 163, 163);
+  margin: 0.6rem 0 2rem 0;
+}
+
+.loading_anim {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  /* Triângulo com cor igual */
+  border: 5px solid rgba(189, 189, 189, 0.25);
+  /* Dois lados do retângulo com cor diferente */
+  border-left-color: rgba(3, 155, 229, 1);
+  border-top-color: rgba(3, 155, 229, 1);
+  /* Tornando o triângulo um círculo */
+  border-radius: 50%;
+  /* Aplica a animação de rotação */
+  animation: rotate 600ms infinite linear;
+}
+
+/* Cria a animação de rotação */
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
